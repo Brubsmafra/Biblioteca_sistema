@@ -52,13 +52,16 @@ namespace Biblioteca_sistema
             this.ColunaStatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btSalvar = new System.Windows.Forms.Button();
             this.textBoxDescricao = new System.Windows.Forms.TextBox();
+            this.btAlterar = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBoxID = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgsistema_biblioteca)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 31);
+            this.label1.Location = new System.Drawing.Point(110, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 0;
@@ -67,7 +70,7 @@ namespace Biblioteca_sistema
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(174, 31);
+            this.label2.Location = new System.Drawing.Point(260, 30);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 13);
             this.label2.TabIndex = 1;
@@ -76,7 +79,7 @@ namespace Biblioteca_sistema
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(318, 31);
+            this.label3.Location = new System.Drawing.Point(404, 26);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 2;
@@ -85,7 +88,7 @@ namespace Biblioteca_sistema
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(470, 30);
+            this.label4.Location = new System.Drawing.Point(556, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 3;
@@ -94,7 +97,7 @@ namespace Biblioteca_sistema
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(634, 31);
+            this.label5.Location = new System.Drawing.Point(720, 26);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 4;
@@ -103,7 +106,7 @@ namespace Biblioteca_sistema
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(837, 31);
+            this.label6.Location = new System.Drawing.Point(887, 26);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(37, 13);
             this.label6.TabIndex = 5;
@@ -111,43 +114,43 @@ namespace Biblioteca_sistema
             // 
             // textBoxNome
             // 
-            this.textBoxNome.Location = new System.Drawing.Point(68, 27);
+            this.textBoxNome.Location = new System.Drawing.Point(154, 24);
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(100, 20);
             this.textBoxNome.TabIndex = 6;
             // 
             // textBoxAutor
             // 
-            this.textBoxAutor.Location = new System.Drawing.Point(212, 28);
+            this.textBoxAutor.Location = new System.Drawing.Point(298, 23);
             this.textBoxAutor.Name = "textBoxAutor";
             this.textBoxAutor.Size = new System.Drawing.Size(100, 20);
             this.textBoxAutor.TabIndex = 7;
             // 
             // textBoxEditora
             // 
-            this.textBoxEditora.Location = new System.Drawing.Point(364, 28);
+            this.textBoxEditora.Location = new System.Drawing.Point(450, 23);
             this.textBoxEditora.Name = "textBoxEditora";
             this.textBoxEditora.Size = new System.Drawing.Size(100, 20);
             this.textBoxEditora.TabIndex = 8;
             // 
             // textBoxCategoria
             // 
-            this.textBoxCategoria.Location = new System.Drawing.Point(528, 27);
+            this.textBoxCategoria.Location = new System.Drawing.Point(614, 23);
             this.textBoxCategoria.Name = "textBoxCategoria";
             this.textBoxCategoria.Size = new System.Drawing.Size(100, 20);
             this.textBoxCategoria.TabIndex = 9;
             // 
             // textBoxStatus
             // 
-            this.textBoxStatus.Location = new System.Drawing.Point(880, 30);
+            this.textBoxStatus.Location = new System.Drawing.Point(930, 23);
             this.textBoxStatus.Name = "textBoxStatus";
-            this.textBoxStatus.Size = new System.Drawing.Size(100, 20);
+            this.textBoxStatus.Size = new System.Drawing.Size(50, 20);
             this.textBoxStatus.TabIndex = 11;
             this.textBoxStatus.TextChanged += new System.EventHandler(this.textBoxStatus_TextChanged);
             // 
             // btLimpar
             // 
-            this.btLimpar.Location = new System.Drawing.Point(68, 79);
+            this.btLimpar.Location = new System.Drawing.Point(27, 79);
             this.btLimpar.Name = "btLimpar";
             this.btLimpar.Size = new System.Drawing.Size(75, 23);
             this.btLimpar.TabIndex = 12;
@@ -225,16 +228,46 @@ namespace Biblioteca_sistema
             // 
             // textBoxDescricao
             // 
-            this.textBoxDescricao.Location = new System.Drawing.Point(695, 28);
+            this.textBoxDescricao.Location = new System.Drawing.Point(781, 23);
             this.textBoxDescricao.Name = "textBoxDescricao";
-            this.textBoxDescricao.Size = new System.Drawing.Size(136, 20);
+            this.textBoxDescricao.Size = new System.Drawing.Size(100, 20);
             this.textBoxDescricao.TabIndex = 15;
+            // 
+            // btAlterar
+            // 
+            this.btAlterar.Location = new System.Drawing.Point(364, 79);
+            this.btAlterar.Name = "btAlterar";
+            this.btAlterar.Size = new System.Drawing.Size(75, 23);
+            this.btAlterar.TabIndex = 16;
+            this.btAlterar.Text = "Alterar";
+            this.btAlterar.UseVisualStyleBackColor = true;
+            this.btAlterar.Click += new System.EventHandler(this.btAlterar_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(24, 30);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(18, 13);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "ID";
+            // 
+            // textBoxID
+            // 
+            this.textBoxID.Enabled = false;
+            this.textBoxID.Location = new System.Drawing.Point(52, 23);
+            this.textBoxID.Name = "textBoxID";
+            this.textBoxID.Size = new System.Drawing.Size(30, 20);
+            this.textBoxID.TabIndex = 18;
             // 
             // FormBiblioteca_sistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1015, 450);
+            this.Controls.Add(this.textBoxID);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.btAlterar);
             this.Controls.Add(this.textBoxDescricao);
             this.Controls.Add(this.btSalvar);
             this.Controls.Add(this.dgsistema_biblioteca);
@@ -252,6 +285,7 @@ namespace Biblioteca_sistema
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormBiblioteca_sistema";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Biblioteca";
             this.Load += new System.EventHandler(this.FormBiblioteca_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgsistema_biblioteca)).EndInit();
@@ -284,5 +318,8 @@ namespace Biblioteca_sistema
         private System.Windows.Forms.DataGridViewTextBoxColumn ColunaDescricao;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColunaStatus;
         private System.Windows.Forms.TextBox textBoxDescricao;
+        private System.Windows.Forms.Button btAlterar;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBoxID;
     }
 }

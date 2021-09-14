@@ -119,5 +119,10 @@ namespace Biblioteca_sistema
         {
 
         }
+
+        private void btAlterar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 } 
